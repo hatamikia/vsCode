@@ -63,22 +63,43 @@
             let sum = num1 + num2;
             console.log(sum);
         }
-        
+
         Completename();
 
 
 
 
-        function sumtwonumber(number1 , number2) {
-            return  number1  * number2;
+        function sumtwonumber(number1, number2) {
+            return number1 * number2;
         }
 
-       let tt =  sumtwonumber(11,65984);
+        let tt = sumtwonumber(11, 65984);
         console.log(tt);
 
 
+
+
         //Object in Java script
+        //Object mitone daraye property va function bashe
+        //mitoni maghadire on ro ham avaz koni
+        //key : "valu" mibashad
+        //key :function(){} ham mibashad
+        let carobject = {
+            name: "BMW",
+            color: "Red",
+            speed: 1800,
+            start: function () {
+                console.log("Start car in function");
+            },
+            stop: function () { "stop car in function" }
+        }
+        //you can read all object or property of obj
+        console.log(carobject);
+        console.log(carobject.start());
+        console.log(carobject.speed);
+
         
+
 
 
 
