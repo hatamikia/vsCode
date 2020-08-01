@@ -7,23 +7,87 @@
 
     <!-- variable in javascript -->
     <script>
-        
+
         let number = 15;
         let height = 22.5;
 
 
         var name = "saeed";
+        var gender = "male"
+        var name2 = "ali"
         var family = "Alavi";
 
 
         //only read only
-        const  avarage = 20;
+        const avarage = 20;
         const myjob = "mobile";
 
 
+        var fullname = `${name}  ${family}`;
+        console.log(fullname);
 
 
-       
+
+        // karborde ? sharte khatti
+        // shart ? "age sahih bashe ":"dar gheyre insorat"
+        alert(name === name2 ? "namha yeki and " : "namha motefavetand");
+
+        //karborde && dar sharti
+        alert(name === name2 && gender === "male" ? "You are ok" : "You are not ok");
+
+        //karborde ya ||
+        alert(name === name2 || gender === "male" ? "You are ok" : "You are not ok");
+
+
+
+        if (number !== height) {
+
+            console.log("not equel number and heght");
+
+        }
+
+        // karborde !  not manteghi(logical)
+        //sharto bar ax mikone
+        if (!(number !== height)) {
+
+            console.log("not equel number and heght");
+
+        }
+
+        //Function ha
+        //function ha niyaz darand seda zade shavand
+        // b khodi khod ejra nmishavand
+        function Completename() {
+            num1 = 10;
+            num2 = 22;
+            let sum = num1 + num2;
+            console.log(sum);
+        }
+        
+        Completename();
+
+
+
+
+        function sumtwonumber(number1 , number2) {
+            return  number1  * number2;
+        }
+
+       let tt =  sumtwonumber(11,65984);
+        console.log(tt);
+
+
+        //Object in Java script
+        
+
+
+
+
+
+
+
+
+
 
 
 
