@@ -7,7 +7,7 @@
 
     <!-- variable in javascript Seasion 1  -->
     <script>
- //==================variable================================================>
+        //==================variable================================================>
         let number = 15;
         let height = 22.5;
 
@@ -27,7 +27,7 @@
         console.log(fullname);
 
 
-//==================condition khatti ================================================>
+        //==================condition khatti ================================================>
         // karborde ? sharte khatti
         // shart ? "age sahih bashe ":"dar gheyre insorat"
         alert(name === name2 ? "namha yeki and " : "namha motefavetand");
@@ -54,7 +54,7 @@
 
         }
 
-//==================function================================================>
+        //==================function================================================>
         //Function ha
         //function ha niyaz darand seda zade shavand
         // b khodi khod ejra nmishavand
@@ -78,14 +78,17 @@
         console.log(tt);
 
 
-//==================object================================================>
+        //==================object================================================>
+        /*
+                Object in Java script
+                Object mitone daraye property va function bashe
+                mitoni maghadire on ro ham avaz koni
+                key : "valu" mibashad
+                key :function(){} ham mibashad
+                */
 
-        //Object in Java script
-        //Object mitone daraye property va function bashe
-        //mitoni maghadire on ro ham avaz koni
-        //key : "valu" mibashad
-        //key :function(){} ham mibashad
-        let carobject = {name: "BMW",color: "Red", speed: 1800,
+        let carobject = {
+            name: "BMW", color: "Red", speed: 1800,
             start: function () {
                 console.log("Start car in function");
             },
@@ -96,25 +99,26 @@
         console.log(carobject.start());
         console.log(carobject.speed);
 
-     
+
         //==================Array================================================>
-        
-        //Array noe khassi az moteghayyer ha k mitone chand valu bashe
-        //List az age ha darim
-        //list az name ha
-        //dastresi ba estefade az index ha k shoro az 0
-        //ghabeliyat read va write darim
-        //array ha ham daraye yekseri tavabe hastand
-        
+        /*
+           Array noe khassi az moteghayyer ha k mitone chand valu bashe
+           List az age ha darim
+           list az name ha
+           dastresi ba estefade az index ha k shoro az 0
+           ghabeliyat read va write darim
+           array ha ham daraye yekseri tavabe hastand
+       */
+
         let ageArray = [18, 20, 70, 66, 23];
         let nameArray = ["saeed", "ali", "naghi", "sara", "zahra"];
-        let complexarray =[20,"ali",225,988,"Reza"];
+        let complexarray = [20, "ali", 225, 988, "Reza"];
 
         console.log(nameArray);
         console.log(ageArray[0]);
         console.log(nameArray[2]);
         console.log(nameArray.length);
-        console.log(nameArray.slice(0,3));
+        console.log(nameArray.slice(0, 3));
         //az 2 b bado migire
         console.log(nameArray.slice(2));
         //migarde to kodom ali dare
@@ -133,18 +137,65 @@
 
         let objarray = [
 
-         {name:"jalal",age:18,family:"alavi"},
-         {name:"reza",age:18,family:"ehsani"},
-         {name:"sara",age:18,family:"kamalvand"}
+            { name: "jalal", age: 18, family: "alavi" },
+            { name: "reza", age: 18, family: "ehsani" },
+            { name: "sara", age: 18, family: "kamalvand" }
         ]
         console.log(objarray);
 
-//==================object================================================>
+        //==================Halghe ha================================================>
+        //1)
+        let halghe = ["sara", "ahmad", "ali", "jaber", "iraq", "Reza"];
+        for (let i = 0; i < halghe.length; i++) {
+            const element = halghe[i];
+            console.log(i + element);
+        }
+
+        //2)
+        /*
+        ta zamani ejra mishavad k shart bargharr bashad
+        shomarande halghe darone khode halghe bgayd neveshte shavad
+            while (condition) {}
+        momkene hatta yek bar ham halghe ejra nashe
+        */ 
+
+        n1 = 1;
+        n2 = 200;
+        while (n1 <= n2) {
+            //bi payan ejra mishe morogar hang mikone
+            console.log(n1);
+            n1++
+        }
+
+
+        //3)
+        /* 
+        avval stament ejra mishe bad shart check mishe
+        pas inja hatman yek bar shart ejra mishe
+        do {
+        } while (condition);
+       */
+
+        numb1 = 0;
+        numb2 = 20;
+        do {
+            console.log("0 smaler of 20");
+            numb1++;
+
+        } while (numb1 > numb2);
 
 
 
-    
-        
+
+
+
+
+
+
+
+
+
+
 
 
 
