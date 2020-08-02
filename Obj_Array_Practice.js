@@ -23,15 +23,10 @@ name = "saeed";
 
 function getDate() {
     var date = new Date()
-    let date2 = new Date()
-    const date3 = new Date()
     return date
 }
-
 getDate()
 console.log(date)  //❌ Reference Error
-console.log(date2) //❌ Reference Error
-console.log(date3) //❌ Reference Error
 
 var mm = 21;  //  tabei
 let nn = 42;    // blocki
@@ -41,3 +36,6 @@ const kk = 54; // read only
 var araye =[1,2,3]
 var obj ={key:"value"}
 var arrayobj=[{key:'value'},{key:"value"}]
+
+
+
