@@ -10,6 +10,49 @@
 <body>
 
     <script>
+        /* moteghayyer scopei hastand ya sarasari
+        use faghat let / const
+        let =  ghabele taghire
+        const = gheyre ghabele taghire you cant reassighn
+        */
+
+        let name = "saeed"
+        const family = "hatamikia";
+        let array = [2, 3, 4]
+
+        //scope marbote b for
+        //start
+        for (let i = 0; i < array.length; i++) {
+            const element = array[i];
+            //dastresi b name va family chon sarsari tarif shode
+            name = "ali";
+            console.log(name);
+            //nmitoni b const dobare meghdar bedi
+            // family = "razabi";
+            console.log(family); //Uncaught TypeError: invalid assignment to const 'family'
+        }
+        //finish scope
+
+
+        //==================templete string========================>
+        const adress = "www.google.com";
+        console.log(`my website is ${adress}`);
+
+        //==================ES6 Loop ========================>
+        const arraynewes6 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+        for( i in arraynewes6){
+            console.log(i);
+        }
+        //==========3 function Filter / Map / Reduce in array=============>
+        
+
+
+        
+
+
+
+
+
 
 
 
