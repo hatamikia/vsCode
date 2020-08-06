@@ -40,14 +40,103 @@
 
         //==================ES6 Loop ========================>
         const arraynewes6 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
-        for( i in arraynewes6){
+        for (i in arraynewes6) {
             console.log(i);
         }
-        //==========3 function Filter / Map / Reduce in array=============>
-        
+        //==========3 function Filter / Map / Reduce/foreach in array=============>
+
+        ["ali", "hamid", "reza", "naghi"].forEach(function (item, index) {
+            console.log(item, index);
+        });
 
 
-        
+
+        const tmap = [1, 2, 3, 4, 5, 6].map(function (item, index) {
+            return `${index} is ` + item * 2
+        });
+        console.log(tmap);
+
+
+        const filter = ["ali", "saeed", "amirreza", "kakoli"].filter(function (item, index) {
+            return item.length <= 4
+        });
+        console.log(filter);
+
+
+        const tforeach = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        tforeach.forEach(function (item, index) {
+            return item;
+        })
+        console.log(tforeach);
+
+        const tmap2 = [14, 2, 3, 4, 5, 6, 7, 8, 9].map(function (item, index) {
+            return item + 165000
+        });
+        console.log(tmap2);
+
+
+        const tfilter2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 44].filter(function (item, index) {
+            return item % 2 === 0
+        });
+        console.log(tfilter2);
+
+        //sperad operator one copy of array   ...
+        const spreadOperator = ["ali", "saeed", "amirreza", "kakoli"];
+        console.log(...spreadOperator);
+
+
+        //output true or false  on one condition
+        const sometest = [1, 2, 3, 4, 5, 6, 7, 8].some(function (item, index) {
+            return item > 9
+        });
+        console.log(sometest);
+
+        //difrent between filter and find
+        //retrurn all object from array
+       
+
+        let animals = [
+            { name: 'Tibbers', type: 'cat', isNeutered: true, age: 22 },
+            { name: 'Fluffball', type: 'rabbit', isNeutered: false, age: 11 },
+            { name: 'Straw', type: 'dog', isNeutered: true, age: 5 },
+            { name: 'Stttewt', type: 'monkey', isNeutered: true, age: 45 },
+            { name: 'Sfhop', type: 'cat', isNeutered: true, age: 25 }
+        ].filter(function (item, index) {
+            return item.age > 11
+        })
+        console.log(animals);
+
+
+        //find() method
+         //teturn only  first obj from array 
+
+        let animals2 = [
+            { name: 'Tibbers', type: 'cat', isNeutered: true, age: 22 },
+            { name: 'Fluffball', type: 'rabbit', isNeutered: false, age: 11 },
+            { name: 'Straw', type: 'dog', isNeutered: true, age: 5 },
+            { name: 'Stttewt', type: 'monkey', isNeutered: true, age: 5 },
+            { name: 'Sfhop', type: 'cat', isNeutered: true, age: 25 }
+        ].find(function (item, index) {
+            return item.age === 5
+        })
+        console.log(animals2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
