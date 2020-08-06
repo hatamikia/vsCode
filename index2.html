@@ -93,7 +93,7 @@
 
         //difrent between filter and find
         //retrurn all object from array
-       
+
 
         let animals = [
             { name: 'Tibbers', type: 'cat', isNeutered: true, age: 22 },
@@ -108,7 +108,7 @@
 
 
         //find() method
-         //teturn only  first obj from array 
+        //teturn only  first obj from array 
 
         let animals2 = [
             { name: 'Tibbers', type: 'cat', isNeutered: true, age: 22 },
@@ -122,6 +122,50 @@
         console.log(animals2);
 
 
+
+
+
+
+        //==========fat arrow function======================================>
+
+        //fat arrow function
+        //function ha sharvand daraje 1 hastand ?
+        //chon  kolle yek function ro mitone berizi toye ye moteghayyer
+        const func1 = function fullname(name, family) {
+            return name + "  " + family
+        }
+        let jj = func1("saeid", "hatamikia");
+        console.log(jj);
+
+        /*
+        halate kolli fanction chand khatti
+        () vorodi   {} khoroji
+
+                 const funct2 = ()=>{
+                    return .......
+                }
+                halate kolli tabe tak khatti
+
+                   const funct3    ()=>{}
+        */
+
+
+        const func2 = (a, b) => {
+            return a + b
+        }
+        console.log(func2(8, 6));
+
+
+        /////////////////////////////////////////
+
+        //func tak khatti
+        const func3 = (i, j) => i + j
+        console.log(func3(6, 5));
+
+
+
+
+        
 
 
 
