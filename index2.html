@@ -164,8 +164,100 @@
 
 
 
+        //rest oprerator before es6  ...
+        //unlimited entry
+        //...number   mafhome ine binahat number 
+        const avg = (...number) => {
+            let sum = 0;
+            for (i in number) {
+                sum += number[i] / number.length
+            }
+            return sum
+        }
+        console.log("avarage is " + avg(10, 10, 10));
 
+
+
+        //Spread ...  in es6   one copy of array 
+
+        const spread = [
+            { name: "ali", age: 21 },
+            { name: "naghi", age: 30 },
+            { name: "taghi", age: 22 },
+            { name: "pali", age: 40 }
+        ]
+        const spread2 = [
+            { family: "rezaei", number: 01 },
+            { family: "alavi", number: 02 },
+            { family: "akrami", number: 03 },
+            { family: "ashjari", number: 04 }
+        ]
+
+        const spread3 = [...spread, ...spread2, 3333, 4444, 878787];
+        console.log(spread3);
+
+
+
+
+        //==========classes======================================>
+        /*
+        har class constractor dare k vaghti new mikoni az class constractor seda zade mishe
+        this.color = color yani this.color in vessel barabare ba color vorodiye class ast
+        darone class tabe ham mitoni tarif koni bedone neveshtane kalameh function
         
+        */
+
+        class vessel {
+            constructor(gt, nt, name, imo) {
+
+                this.gt = gt;
+                this.nt = nt;
+                this.name = name;
+                this.imo = imo;
+
+            }
+
+            stop() {
+                console.log("stop vessel ... !");
+            }
+
+            move() {
+                console.log("start move vessel ... !");
+            }
+
+        }
+
+        //new kardane az yek class  new vessel to moteghayyer miorizim estefade betonim konim
+        const newVessel = new vessel(120, 1200, "ribinsk", 123658556);
+        console.log(newVessel);
+
+        //ers bari ba kalame extend va vaghti dar tabei k farzand ast va ma 
+        //baraye an constractor tarif nakonim bayad az parametr vorodi pedar behsh bedim
+        //agar constractor bhesh bdim  mitonim jadid khodemon parametr dg bedim
+        //super vaghti migim yani parametr vorodiu az pedar bashe
+        //ya meghdare b hengame nmone sazi  ya meghdare hengame ers bari dar super
+  
+
+        class omsiky1 extends vessel {
+
+        }
+        const myOmskiy1 = new omsiky1(1250, 4500, "omiskiy-2015", 45424578);
+        console.log(myOmskiy1);
+
+
+        //OR
+
+        class omsiky2 extends vessel {
+
+            constructor() {
+                super(1250, 4500, "omiskiy-2015", 45424578)
+            }
+        }
+        const myOmskiy2 = new omsiky2();
+        console.log(myOmskiy2);
+
+
+
 
 
 
