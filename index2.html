@@ -236,7 +236,7 @@
         //agar constractor bhesh bdim  mitonim jadid khodemon parametr dg bedim
         //super vaghti migim yani parametr vorodiu az pedar bashe
         //ya meghdare b hengame nmone sazi  ya meghdare hengame ers bari dar super
-  
+
 
         class omsiky1 extends vessel {
 
@@ -255,6 +255,78 @@
         }
         const myOmskiy2 = new omsiky2();
         console.log(myOmskiy2);
+
+        //========== distraction         =====================================>
+        /*
+        in alamate {}   tarife object ast
+        joloye function vaghti dakhle ()  alamate {} migozarim yani obhect ghabol mmikone b onvane vorodi
+        ...other   yani baghiye property ha k b name haye digar hastand beriz to moteghayyer b name other
+        */
+
+
+
+        function carBuilder({ color, speed, cilandercount, name, ...other }) {
+
+            //property haei k hast dar vorodi
+            console.log(color, speed, cilandercount, name);
+            //property haei k dar vorodi nist b onvane object bar migardone
+            console.log(other);
+        }
+
+
+
+        const carproperty = {
+
+            color: "red",
+            speed: 100,
+            cilandercount: 6,
+            name: "frari",
+            //3 property k nist dar vorodi tabe ma va niyazi nadarib behesh
+            class: "B",
+            Map: "German",
+            year: "1984"
+
+        }
+        //inja tabe ra farakhani mikonim  va b jaye tak tak behsh ye object pass dadim
+        //dalilesh chon onja ma dar vorodi ha property ha ro darone kroshe gozashtim{}
+        carBuilder(carproperty);
+
+        //========== Promise         =====================================>
+
+        //timout function  run a code after  time//  run only one time
+
+        setTimeout(() => {
+            console.log("hi saeed after 2 second");
+
+        }, 2000);
+
+
+
+        //setInterval function  repeat a  code every ... second // run multi time
+        setInterval(() => {
+            console.log("repeat hi saeed every 2 second");
+        }, 2000000000);
+
+
+        //math.floor()  rond kardane adad gereftane kafe adad
+        //math.random()  tolide adade beyne 0 ta 1 
+        //zarbdare 10  mishe beyne 1 ta 10
+        function randomnumber() {
+            console.log(Math.floor(Math.random() * 10));
+        }
+
+        randomnumber();
+
+//========== moudle         =====================================>
+
+
+
+
+
+
+
+
+
 
 
 
